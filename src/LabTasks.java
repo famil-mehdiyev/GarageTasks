@@ -193,15 +193,15 @@ public class LabTasks {
 //
 //        }
 
-        String[] arr = {"a", "ı", "o", "u", "e", "ə", "i", "ö", "ü"};
+        char[] arr = {'a', 'ı', 'o', 'u', 'e', 'ə', 'i', 'ö', 'ü'};
 
         for (int i = 0; i < arr.length; i++) {
             switch (arr[i]) {
-                case "i", "ı", "u", "ü" -> System.out.println( arr[i] + "-"+"Qapali saitdir");
-                case "o", "a", "ö", "e", "ə" -> System.out.println(arr[i] +"-" +"Aciq saitdir");
+                case 'i', 'ı', 'u', 'ü' -> System.out.println( arr[i] + "-"+"Qapali saitdir");
+                case 'o', 'a', 'ö', 'e', 'ə' -> System.out.println(arr[i] +"-" +"Aciq saitdir");
             }
         }
-      git
+
     }
 }
 
