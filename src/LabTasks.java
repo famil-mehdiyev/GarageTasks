@@ -201,7 +201,7 @@ public class LabTasks {
                 case "o", "a", "ö", "e", "ə" -> System.out.println(arr[i] +"-" +"Aciq saitdir");
             }
         }
-        System.out.println(".");
+      git
     }
 }
 
