@@ -106,43 +106,72 @@ public class GeneralTasks {
 //            default -> System.out.println("Sehv reng daxil edillib,yeniden daxil etmeye cehd edin");
 //        }
 // Task 2 04.04.2024
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Valyutani daxil edin");
+//        String valyuta = sc.nextLine();
+//        System.out.println("Heddef valyutani daxil edin");
+//        String hedefValyuta = sc.nextLine();
+//        System.out.println("Deyeri daxil edin");
+//        int deyer = sc.nextInt();
+//
+//
+//
+//
+//        switch (valyuta) {
+//            case "Usd":{
+//                switch (hedefValyuta){
+//                    case "Azn" -> System.out.println(deyer*1.70 + ": azn");
+//                    case "Euro" -> System.out.println(deyer*0.92 + " : euro");
+//                    default -> System.out.println("duzgun daxil edilmeyib");
+//                }
+//
+//            }
+//            break;
+//            case "Azn":{
+//                switch (hedefValyuta){
+//                    case "Usd" -> System.out.println(deyer*0.59);
+//                    case "Euro" -> System.out.println(deyer*0.54);
+//                    default -> System.out.println("duzgun daxil edilmeyib");
+//                }
+//
+//            }
+//            break;
+//            case "Euro" : {
+//                switch (hedefValyuta){
+//                    case "Usd" -> System.out.println(deyer *1.09);
+//                    case "Azn" -> System.out.println(deyer*1.85);
+//                    default -> System.out.println("duzgun daxil edilmeyib");
+//                }
+//            }
+//        }
+
         Scanner sc = new Scanner(System.in);
-        System.out.println("Valyutani daxil edin");
-        String valyuta = sc.nextLine();
-        System.out.println("Heddef valyutani daxil edin");
-        String hedefValyuta = sc.nextLine();
-        System.out.println("Deyeri daxil edin");
-        int deyer = sc.nextInt();
+        System.out.println("Arrayin nece olculu oldugunu qeyd edin");
+        int capacity = sc.nextInt();
 
+        int[] arr = new int[capacity];
 
+        for(int i=0;i< arr.length;i++){
+            System.out.println(i+ " elementi daxil edin");
+            arr[i]=sc.nextInt();
 
-
-        switch (valyuta) {
-            case "Usd":{
-                switch (hedefValyuta){
-                    case "Azn" -> System.out.println(deyer*1.70 + ": azn");
-                    case "Euro" -> System.out.println(deyer*0.92 + " : euro");
-                    default -> System.out.println("duzgun daxil edilmeyib");
-                }
-
-            }
-            break;
-            case "Azn":{
-                switch (hedefValyuta){
-                    case "Usd" -> System.out.println(deyer*0.59);
-                    case "Euro" -> System.out.println(deyer*0.54);
-                    default -> System.out.println("duzgun daxil edilmeyib");
-                }
-
-            }
-            break;
-            case "Euro" : {
-                switch (hedefValyuta){
-                    case "Usd" -> System.out.println(deyer *1.09);
-                    case "Azn" -> System.out.println(deyer*1.85);
-                    default -> System.out.println("duzgun daxil edilmeyib");
-                }
-            }
         }
+
+
+    int max =0;
+    int factorial =1;
+    for(int a =0;a<arr.length;a++){
+        if(arr[a]>max)
+            max=arr[a];
+    }
+        System.out.println("maksimum eded "+max);
+    if(!(max%2==0)){
+        System.out.println(max);
+    }else{
+        for(int j=max;j>=1;j--){
+            factorial*=j;
+        }
+    }
+        System.out.println("ededin factoriali "+factorial);
     }
 }

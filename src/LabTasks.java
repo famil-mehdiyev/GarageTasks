@@ -193,13 +193,56 @@ public class LabTasks {
 //
 //        }
 
-        char[] arr = {'a', 'ı', 'o', 'u', 'e', 'ə', 'i', 'ö', 'ü'};
+//        char[] arr = {'a', 'ı', 'o', 'u', 'e', 'ə', 'i', 'ö', 'ü'};
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            switch (arr[i]) {
+//                case 'i', 'ı', 'u', 'ü' -> System.out.println( arr[i] + "-"+"Qapali saitdir");
+//                case 'o', 'a', 'ö', 'e', 'ə' -> System.out.println(arr[i] +"-" +"Aciq saitdir");
+//            }
+//        }
 
-        for (int i = 0; i < arr.length; i++) {
-            switch (arr[i]) {
-                case 'i', 'ı', 'u', 'ü' -> System.out.println( arr[i] + "-"+"Qapali saitdir");
-                case 'o', 'a', 'ö', 'e', 'ə' -> System.out.println(arr[i] +"-" +"Aciq saitdir");
-            }
+    int max=0;
+    int secondMax=0;
+    int min = Integer.MAX_VALUE;
+    int secondMin=Integer.MAX_VALUE;
+
+    int[] array={56,98,544,632,8745,122,7895,5698,23};
+
+    for(int i=0;i< array.length;i++){
+        if(max<array[i]){
+            secondMax=max;
+            max=array[i];
+
+        }
+        if(array[i]>secondMax&&array[i]!=max){
+            secondMax=array[i];
+        }
+
+        if(min>array[i]){
+            secondMin=min;
+            min=array[i];
+        }
+        if(array[i]<secondMin&&array[i]!=min){
+            secondMin=array[i];
+        }
+    }
+
+
+    int sumMax =max+secondMax;
+    int sumMin = min+secondMin;
+
+    Scanner sc = new Scanner(System.in);
+        System.out.println("Operasiyani daxil edin");
+
+        String operation =  sc.nextLine();
+        switch(operation){
+            case "+" -> System.out.println(sumMax+sumMin);
+            case "-" -> System.out.println(sumMax-sumMin);
+            case "/" -> System.out.println(sumMax/sumMin);
+            case "*" -> System.out.println(sumMax*sumMin);
+            default -> System.out.println("Error");
+
         }
 
     }
