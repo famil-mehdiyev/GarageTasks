@@ -202,47 +202,104 @@ public class LabTasks {
 //            }
 //        }
 
-    int max=0;
-    int secondMax=0;
-    int min = Integer.MAX_VALUE;
-    int secondMin=Integer.MAX_VALUE;
+//    int max=0;
+//    int secondMax=0;
+//    int min = Integer.MAX_VALUE;
+//    int secondMin=Integer.MAX_VALUE;
+//
+//    int[] array={56,98,544,632,8745,122,7895,5698,23};
+//
+//    for(int i=0;i< array.length;i++){
+//        if(max<array[i]){
+//            secondMax=max;
+//            max=array[i];
+//
+//        }
+//        if(array[i]>secondMax&&array[i]!=max){
+//            secondMax=array[i];
+//        }
+//
+//        if(min>array[i]){
+//            secondMin=min;
+//            min=array[i];
+//        }
+//        if(array[i]<secondMin&&array[i]!=min){
+//            secondMin=array[i];
+//        }
+//    }
+//
+//
+//    int sumMax =max+secondMax;
+//    int sumMin = min+secondMin;
+//
+//    Scanner sc = new Scanner(System.in);
+//        System.out.println("Operasiyani daxil edin");
+//
+//        String operation =  sc.nextLine();
+//        switch(operation){
+//            case "+" -> System.out.println(sumMax+sumMin);
+//            case "-" -> System.out.println(sumMax-sumMin);
+//            case "/" -> System.out.println(sumMax/sumMin);
+//            case "*" -> System.out.println(sumMax*sumMin);
+//            default -> System.out.println("Error");
+//
+//        }
 
-    int[] array={56,98,544,632,8745,122,7895,5698,23};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1-ci istifadecinin adini daxil edin");
+        String userName1 = sc.nextLine();
+        System.out.println("1-ci Istifadecinin soyadini daxil edin");
+        String userSurname1 = sc.nextLine();
+//        System.out.println("1-ci istifadecinin yawini daxil edin");
+//        byte userAge1=sc.nextByte();
+        System.out.println("1-ci Userin pulunu daxil edin");
+        double userMoney1 = sc.nextDouble();
 
-    for(int i=0;i< array.length;i++){
-        if(max<array[i]){
-            secondMax=max;
-            max=array[i];
-
-        }
-        if(array[i]>secondMax&&array[i]!=max){
-            secondMax=array[i];
-        }
-
-        if(min>array[i]){
-            secondMin=min;
-            min=array[i];
-        }
-        if(array[i]<secondMin&&array[i]!=min){
-            secondMin=array[i];
-        }
-    }
+        sc.nextLine();
+        System.out.println("2-ci istifadecinin adini daxil edin");
+        String userName2 = sc.nextLine();
+        System.out.println("2-ci istifadecinin soyadini daxil edin");
+        String userSurname2 = sc.nextLine();
+//        System.out.println("2-ci istifadecinin yawini daxil edin");
+//        byte userAge2=sc.nextByte();
+        System.out.println("2-ci Userin pulunu daxil edin");
+        double userMoney2 = sc.nextDouble();
 
 
-    int sumMax =max+secondMax;
-    int sumMin = min+secondMin;
+        while (true) {
+            System.out.println("medaxili daxil edin");
+            double moneyOperation = sc.nextDouble();
+            System.out.println("emeliyyati daxil edin");
+            int operation = sc.nextInt();
 
-    Scanner sc = new Scanner(System.in);
-        System.out.println("Operasiyani daxil edin");
+            switch (operation) {
+                case 1: {
+                    if (userMoney1 > moneyOperation) {
+                        System.out.println(userName1 +" " +userSurname1 +" to" +" "+ userName2+ " "+userSurname2);
+                        userMoney2 += moneyOperation;
+                        userMoney1 -= moneyOperation;
+                    } else {
+                        System.out.println("sizin balansiniz  kifayet deyil");
+                    }
+                    break;
+                }
+                case 2: {
+                    if (userMoney2 > moneyOperation) {
+                        System.out.println(userName2 +" " +userSurname2 +" gonderir" + userName1+ " "+userSurname1);
+                        userMoney2 -= moneyOperation;
+                        userMoney1 += moneyOperation;
+                    } else {
+                        System.out.println("balansiniz  kifayet deyil");
+                    }
+                    break;
+                }
+                case 3: {
+                    System.exit(0);
+                }
+            }
 
-        String operation =  sc.nextLine();
-        switch(operation){
-            case "+" -> System.out.println(sumMax+sumMin);
-            case "-" -> System.out.println(sumMax-sumMin);
-            case "/" -> System.out.println(sumMax/sumMin);
-            case "*" -> System.out.println(sumMax*sumMin);
-            default -> System.out.println("Error");
-
+            System.out.println(userName1 + " :" + userMoney1);
+            System.out.println(userName2 + " :" + userMoney2);
         }
 
     }

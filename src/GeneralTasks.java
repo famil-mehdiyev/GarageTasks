@@ -173,5 +173,6 @@ public class GeneralTasks {
         }
     }
         System.out.println("ededin factoriali "+factorial);
+
     }
 }

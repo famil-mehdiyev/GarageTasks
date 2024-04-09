@@ -252,44 +252,45 @@ public class Main {
 //        }
         //Task 2
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Valyutani daxil edin");
-        String valyuta = sc.nextLine();
-        System.out.println("Heddef valyutani daxil edin");
-        String hedefValyuta = sc.nextLine();
-        System.out.println("Deyeri daxil edin");
-        int deyer = sc.nextInt();
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Valyutani daxil edin");
+//        String valyuta = sc.nextLine();
+//        System.out.println("Heddef valyutani daxil edin");
+//        String hedefValyuta = sc.nextLine();
+//        System.out.println("Deyeri daxil edin");
+//        int deyer = sc.nextInt();
+//
+//
+//
+//
+//        switch (valyuta) {
+//            case "Usd":{
+//                switch (hedefValyuta){
+//                    case "Azn" -> System.out.println(deyer*1.70 + ": azn");
+//                    case "Euro" -> System.out.println(deyer*0.92 + "euro");
+//                    default -> System.out.println("duzgun daxil edilmeyib");
+//                }
+//
+//            }
+//            break;
+//            case "Azn":{
+//                    switch (hedefValyuta){
+//                        case "Usd" -> System.out.println(deyer*0.59);
+//                        case "Euro" -> System.out.println(deyer*0.54);
+//                        default -> System.out.println("duzgun daxil edilmeyib");
+//                    }
+//
+//            }
+//            break;
+//            case "Euro" : {
+//                switch (hedefValyuta){
+//                    case "Usd" -> System.out.println(deyer *1.09);
+//                    case "Azn" -> System.out.println(deyer*1.85);
+//                    default -> System.out.println("duzgun daxil edilmeyib");
+//                }
+//            }
+//        }
 
-
-
-
-        switch (valyuta) {
-            case "Usd":{
-                switch (hedefValyuta){
-                    case "Azn" -> System.out.println(deyer*1.70 + ": azn");
-                    case "Euro" -> System.out.println(deyer*0.92 + "euro");
-                    default -> System.out.println("duzgun daxil edilmeyib");
-                }
-
-            }
-            break;
-            case "Azn":{
-                    switch (hedefValyuta){
-                        case "Usd" -> System.out.println(deyer*0.59);
-                        case "Euro" -> System.out.println(deyer*0.54);
-                        default -> System.out.println("duzgun daxil edilmeyib");
-                    }
-
-            }
-            break;
-            case "Euro" : {
-                switch (hedefValyuta){
-                    case "Usd" -> System.out.println(deyer *1.09);
-                    case "Azn" -> System.out.println(deyer*1.85);
-                    default -> System.out.println("duzgun daxil edilmeyib");
-                }
-            }
-        }
 
     }
 }
