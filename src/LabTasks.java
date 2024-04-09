@@ -274,7 +274,7 @@ public class LabTasks {
 
             switch (operation) {
                 case 1: {
-                    if (userMoney1 > moneyOperation) {
+                    if (userMoney1 >=moneyOperation) {
                         System.out.println(userName1 +" " +userSurname1 +" send money to " +" "+ userName2+ " "+userSurname2);
                         userMoney2 += moneyOperation;
                         userMoney1 -= moneyOperation;
@@ -284,7 +284,7 @@ public class LabTasks {
                     break;
                 }
                 case 2: {
-                    if (userMoney2 > moneyOperation) {
+                    if (userMoney2 >= moneyOperation) {
                         System.out.println(userName2 +" " +userSurname2 +" send money to " + userName1+ " "+userSurname1);
                         userMoney2 -= moneyOperation;
                         userMoney1 += moneyOperation;
