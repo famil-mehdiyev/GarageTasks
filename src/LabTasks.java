@@ -267,29 +267,29 @@ public class LabTasks {
 
 
         while (true) {
-            System.out.println("medaxili daxil edin");
+            System.out.println("Medaxili daxil edin");
             double moneyOperation = sc.nextDouble();
-            System.out.println("emeliyyati daxil edin");
+            System.out.println("Emeliyyati daxil edin");
             int operation = sc.nextInt();
 
             switch (operation) {
                 case 1: {
                     if (userMoney1 > moneyOperation) {
-                        System.out.println(userName1 +" " +userSurname1 +" to " +" "+ userName2+ " "+userSurname2);
+                        System.out.println(userName1 +" " +userSurname1 +" send money to " +" "+ userName2+ " "+userSurname2);
                         userMoney2 += moneyOperation;
                         userMoney1 -= moneyOperation;
                     } else {
-                        System.out.println("sizin balansiniz  kifayet deyil");
+                        System.out.println("Sizin balansiniz  kifayet deyil");
                     }
                     break;
                 }
                 case 2: {
                     if (userMoney2 > moneyOperation) {
-                        System.out.println(userName2 +" " +userSurname2 +" to " + userName1+ " "+userSurname1);
+                        System.out.println(userName2 +" " +userSurname2 +" send money to " + userName1+ " "+userSurname1);
                         userMoney2 -= moneyOperation;
                         userMoney1 += moneyOperation;
                     } else {
-                        System.out.println("balansiniz  kifayet deyil");
+                        System.out.println("Balansiniz  kifayet deyil");
                     }
                     break;
                 }
@@ -298,8 +298,8 @@ public class LabTasks {
                 }
             }
 
-            System.out.println(userName1 + " :" + userMoney1);
-            System.out.println(userName2 + " :" + userMoney2);
+            System.out.println(userName1 + " : " + userMoney1 + " azn ");
+            System.out.println(userName2 + " : " + userMoney2 + " azn");
         }
 
     }
