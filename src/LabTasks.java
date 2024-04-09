@@ -250,8 +250,8 @@ public class LabTasks {
         String userName1 = sc.nextLine();
         System.out.println("1-ci Istifadecinin soyadini daxil edin");
         String userSurname1 = sc.nextLine();
-//        System.out.println("1-ci istifadecinin yawini daxil edin");
-//        byte userAge1=sc.nextByte();
+        System.out.println("1-ci istifadecinin yawini daxil edin");
+        byte userAge1=sc.nextByte();
         System.out.println("1-ci Userin pulunu daxil edin");
         double userMoney1 = sc.nextDouble();
 
@@ -260,8 +260,8 @@ public class LabTasks {
         String userName2 = sc.nextLine();
         System.out.println("2-ci istifadecinin soyadini daxil edin");
         String userSurname2 = sc.nextLine();
-//        System.out.println("2-ci istifadecinin yawini daxil edin");
-//        byte userAge2=sc.nextByte();
+        System.out.println("2-ci istifadecinin yawini daxil edin");
+        byte userAge2=sc.nextByte();
         System.out.println("2-ci Userin pulunu daxil edin");
         double userMoney2 = sc.nextDouble();
 
