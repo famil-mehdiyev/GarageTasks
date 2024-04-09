@@ -275,7 +275,7 @@ public class LabTasks {
             switch (operation) {
                 case 1: {
                     if (userMoney1 > moneyOperation) {
-                        System.out.println(userName1 +" " +userSurname1 +" to" +" "+ userName2+ " "+userSurname2);
+                        System.out.println(userName1 +" " +userSurname1 +" to " +" "+ userName2+ " "+userSurname2);
                         userMoney2 += moneyOperation;
                         userMoney1 -= moneyOperation;
                     } else {
@@ -285,7 +285,7 @@ public class LabTasks {
                 }
                 case 2: {
                     if (userMoney2 > moneyOperation) {
-                        System.out.println(userName2 +" " +userSurname2 +" gonderir" + userName1+ " "+userSurname1);
+                        System.out.println(userName2 +" " +userSurname2 +" to " + userName1+ " "+userSurname1);
                         userMoney2 -= moneyOperation;
                         userMoney1 += moneyOperation;
                     } else {
