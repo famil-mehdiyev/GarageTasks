@@ -145,34 +145,49 @@ public class GeneralTasks {
 //            }
 //        }
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Arrayin nece olculu oldugunu qeyd edin");
-        int capacity = sc.nextInt();
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Arrayin nece olculu oldugunu qeyd edin");
+//        int capacity = sc.nextInt();
+//
+//        int[] arr = new int[capacity];
+//
+//        for(int i=0;i< arr.length;i++){
+//            System.out.println(i+ " elementi daxil edin");
+//            arr[i]=sc.nextInt();
+//
+//        }
+//
+//
+//    int max =0;
+//    int factorial =1;
+//    for(int a =0;a<arr.length;a++){
+//        if(arr[a]>max)
+//            max=arr[a];
+//    }
+//        System.out.println("maksimum eded "+max);
+//    if(!(max%2==0)){
+//        System.out.println(max);
+//    }else{
+//        for(int j=max;j>=1;j--){
+//            factorial*=j;
+//        }
+//    }
+//        System.out.println("ededin factoriali "+factorial);
 
-        int[] arr = new int[capacity];
 
-        for(int i=0;i< arr.length;i++){
-            System.out.println(i+ " elementi daxil edin");
-            arr[i]=sc.nextInt();
-
-        }
+        Scanner  sc  = new Scanner(System.in);
+        String text= sc.nextLine();
+        String reverse = "";
 
 
-    int max =0;
-    int factorial =1;
-    for(int a =0;a<arr.length;a++){
-        if(arr[a]>max)
-            max=arr[a];
-    }
-        System.out.println("maksimum eded "+max);
-    if(!(max%2==0)){
-        System.out.println(max);
-    }else{
-        for(int j=max;j>=1;j--){
-            factorial*=j;
-        }
-    }
-        System.out.println("ededin factoriali "+factorial);
+
+
+            for (int i=text.length()-1;i>=0;i--){
+                reverse+=text.charAt(i);
+            }
+            System.out.println(reverse);
+
+
 
     }
 }

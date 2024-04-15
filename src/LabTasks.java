@@ -300,6 +300,7 @@ public class LabTasks {
 
             System.out.println(userName1 + " : " + userMoney1 + " azn ");
             System.out.println(userName2 + " : " + userMoney2 + " azn");
+
         }
 
     }
