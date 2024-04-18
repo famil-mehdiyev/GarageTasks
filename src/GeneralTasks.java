@@ -33,7 +33,6 @@ public class GeneralTasks {
 //        System.out.println(tekEdedler / count);
 
 
-
 //        Task 2 verilen arrayi tersine cevirin
 //
 //        int[] arr = {1, 2, 3, 4};
@@ -46,10 +45,7 @@ public class GeneralTasks {
 //        }
 
 
-
-
 //        Task3 Verilen arrayin elementlerinin sorted (kicikden boyuye dogru)olub olmadigini cap edin
-
 
 
 //        int[] arr={1,1,2,4};
@@ -174,19 +170,47 @@ public class GeneralTasks {
 //    }
 //        System.out.println("ededin factoriali "+factorial);
 
+//
+//        Scanner  sc  = new Scanner(System.in);
+//        String text= sc.nextLine();
+//        String reverse = "";
+//
+//
+//
+//
+//            for (int i=text.length()-1;i>=0;i--){
+//                reverse+=text.charAt(i);
+//            }
+//            System.out.println(reverse);
 
-        Scanner  sc  = new Scanner(System.in);
-        String text= sc.nextLine();
-        String reverse = "";
+        Scanner sc = new Scanner(System.in);
 
+        System.out.println("please assign  array  dimension");
+        int dimensionArray = sc.nextInt();
+        int[] array = new int[dimensionArray];
+        int mod = 0;
+        int temp = 0;
+        int i = 0;
 
-
-
-            for (int i=text.length()-1;i>=0;i--){
-                reverse+=text.charAt(i);
+        while (i<array.length) {
+            System.out.println("please  enter number");
+            int singleNumb = sc.nextInt();
+            int singleNumbCopy = singleNumb;
+            while (singleNumbCopy > 0) {
+                mod = singleNumbCopy % 10;
+                singleNumbCopy /= 10;
+                temp += mod;
             }
-            System.out.println(reverse);
-
+            if (!(temp % 2 == 0)) {
+                array[i] = singleNumb;
+                i++;
+            }else{
+                System.out.println(" try again");
+            }
+        }
+        for(int arr :array){
+            System.out.println(arr);
+        }
 
 
     }
