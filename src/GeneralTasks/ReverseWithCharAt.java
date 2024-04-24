@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ReverseWithCharAt {
     public static void main(String[] args) {
         Scanner sc  = new Scanner(System.in);
-        System.out.println("please enter words:");
+        System.out.println("please below enter words:");
         String text= sc.nextLine();
         String reverse = "";
 
