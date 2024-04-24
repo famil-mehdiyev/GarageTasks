@@ -14,10 +14,11 @@ public class GeneralTask1 {
         System.out.println(result);
     }
     public static int power(int number,int power){
-        for(int i=0;i<=power-1;i++){
-            number*=number;
+        int result=1;
+        for(int i=0;i<power;i++){
+            result*=number;
 
         }
-        return number;
+        return result;
     }
 }
