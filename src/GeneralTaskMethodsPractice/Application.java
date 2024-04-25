@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Application {
     public static void main(String[] args) {
 
-
+        Scanner sc = new Scanner(System.in);
 
        int randomNum= createRandomNum();
         System.out.println(randomNum);
@@ -14,7 +14,7 @@ public class Application {
 
         while(true){
 
-           int number= scanner();
+           int number= scanner(sc);
             correctGuest(number,randomNum);
             uncorrectGuest(number,randomNum);
         }
@@ -35,8 +35,8 @@ public class Application {
         }
 
         }
-        public static  int scanner(){
-            Scanner sc = new Scanner(System.in);
+        public static  int scanner(Scanner sc){
+
             int number = sc.nextInt();
         return number;
         }
