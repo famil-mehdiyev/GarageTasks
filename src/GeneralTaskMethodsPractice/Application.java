@@ -5,18 +5,18 @@ import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
 
-        Random random  = new Random();
-        int rm = random.nextInt(100)+1;
-        System.out.println(rm);
+
+
+       int randomNum= createRandomNum();
+        System.out.println(randomNum);
         System.out.print("Bir reqem texmin edin : ");
 
         while(true){
 
-           int number= scanner(sc);
-            correctGuest(number,rm);
-            uncorrectGuest(number,rm);
+           int number= scanner();
+            correctGuest(number,randomNum);
+            uncorrectGuest(number,randomNum);
         }
     }
     public  static  void correctGuest(int number,int rm){
@@ -35,11 +35,16 @@ public class Application {
         }
 
         }
-        public static  int scanner(Scanner sc){
+        public static  int scanner(){
+            Scanner sc = new Scanner(System.in);
             int number = sc.nextInt();
         return number;
         }
 
+public static int createRandomNum(){
+    Random random  = new Random();
+    return  random.nextInt(100)+1;
+}
     }
 
 
