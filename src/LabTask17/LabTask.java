@@ -10,6 +10,7 @@ public class LabTask {
         String character = enterChar();
 
         checkCharacter(arr, character.charAt(0));
+        
 
     }
 
@@ -23,8 +24,8 @@ public class LabTask {
     public static void checkCharacter(String[] arr, char character) {
 
 
+
         for (int i = 0; i < arr.length; i++) {
-            int count = 0;
             for (int j = 0; j < arr[i].length(); j++) {
                 if (arr[i].toLowerCase().charAt(j) == character) {
                     System.out.println(arr[i] + "-verilen herf " + j + " : bu indeksdedir");
