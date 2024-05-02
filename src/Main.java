@@ -291,7 +291,25 @@ public class Main {
 //            }
 //        }
 
+        int[] arr = {1, 2, 3, 4, 5};
+        int index = 2;
+        int[] correctedArr = new int[4];
 
+        for (int i = 0; i <= correctedArr.length; i++) {
+
+            if (i == index) {
+                continue;
+
+            }else if(i<index){
+                correctedArr[i] = arr[i];
+                System.out.println(correctedArr[i]);
+            }else if(i>index){
+                correctedArr[i] = arr[i];
+                System.out.println(correctedArr[i]);
+            }
+
+
+        }
     }
 }
 
