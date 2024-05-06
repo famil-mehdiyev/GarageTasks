@@ -22,13 +22,9 @@ public class Palindrome {
 
     public static boolean isPalindrome(String text, String reversedText) {
 
-
         if (text.equalsIgnoreCase(reversedText)) {
-
             return true;
         }
-
         return false;
-
     }
 }
